@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h4 class="display-4">Angular Custom Element on ASP.NET Core 5</h4>    
+</div>
+@section Scripts {
+    <script src="~/dist/runtime-es2015.js" type="module"></script>
+    <script src="~/dist/runtime-es5.js" nomodule defer></script>
+    <script src="~/dist/polyfills-es5.js" nomodule defer></script>
+    <script src="~/dist/polyfills-es2015.js" type="module"></script>
+    <script src="~/dist/vendor-es2015.js" type="module"></script>
+    <script src="~/dist/vendor-es5.js" nomodule defer></script>
+    <script src="~/dist/main-es2015.js" type="module"></script>
+    <script src="~/dist/main-es5.js" nomodule defer></script>
+}
+@*<app-root></app-root>*@
+<mytodo-element></mytodo-element>
